@@ -10,6 +10,8 @@ export const button = css`
   cursor: pointer;
   font-family: ${fonts.sansSerif.family};
   font-size: ${fluid(1, 1.15)};
+  line-height: 1.3;
+  outline: none;
   padding: ${fluid(0.35, 0.5)} ${fluid(1, 3.5)};
 
   :hover,

@@ -9,12 +9,18 @@ import Heading from '../Heading';
 import Paragraph from '../Paragraph';
 import Textarea from '../Form/Textarea';
 
-import { contact, inner, form, children as sectionChildren } from './style';
+import {
+  contact,
+  inner,
+  form,
+  children as sectionChildren,
+  receiverContainer,
+} from './style';
 
 const Contact = ({ receiverTitle, receiverDescription, ...props }) => (
   <div className={contact} {...props}>
     <div className={inner}>
-      <div className={sectionChildren}>
+      <div className={cx(receiverContainer, sectionChildren)}>
         <Heading level={3} theme="highlight">
           {receiverTitle}
         </Heading>
@@ -37,10 +43,21 @@ const Contact = ({ receiverTitle, receiverDescription, ...props }) => (
           <Textarea
             label="Kurzinfo zu deiner Arbeit (optional)"
             name="message"
+            rows={4}
           />
         </FormRow>
         <FormRow>
-          <Button type="submit">Absenden</Button>
+          <Button
+            type="submit"
+            style={{
+              flex: 0,
+              justifySelf: 'center',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            Absenden
+          </Button>
         </FormRow>
       </form>
     </div>

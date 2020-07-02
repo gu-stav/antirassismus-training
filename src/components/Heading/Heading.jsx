@@ -16,6 +16,7 @@ const StyledHeading = styled.div`
         return fluid(1.5, 2.25);
     }
   }};
+  text-transform: ${(props) => (props.level === 3 ? 'uppercase' : 'none')};
 `;
 
 const Heading = ({ level = 1, as, children, ...props }) => (

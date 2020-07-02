@@ -10,6 +10,6 @@ export const row = css`
 
   > * {
     flex: 1 1 auto;
-    margin-left: ${fluid(0.5, 1)};
+    margin-left: ${fluid(0.5, 1.5)};
   }
 `;

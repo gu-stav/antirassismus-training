@@ -23,7 +23,7 @@ export const quote = css`
 
 export const cite = css`
   font-family: ${fonts.sansSerif.family};
-  font-size: ${fluid(1, 2)};
+  font-size: ${fluid(1, 2.5)};
   font-style: normal;
   color: ${colors.white};
 `;
