@@ -24,4 +24,8 @@ export const icon = css`
   fill: ${colors.highlight};
   height: ${fluid(2, 4)};
   width: ${fluid(2, 4)};
+
+  circle {
+    fill: ${colors.secondary};
+  }
 `;
