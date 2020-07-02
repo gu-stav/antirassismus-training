@@ -7,7 +7,7 @@ const MQ_BREAKPOINTS = [
 export const fonts = {};
 
 export const colors = {
-  primary: 'purple',
+  primary: '#5759fb',
   secondary: '#2e2d2c',
   highlight: '#fec62e',
   white: '#f1eeef',
@@ -22,3 +22,5 @@ export const fluid = (from, to, vpFrom = 320, vpTo = 1280, baseSize = 16) =>
   `calc(${from * baseSize}px + (${to * baseSize} - ${
     from * baseSize
   }) * ((100vw - ${vpFrom}px) / (${vpTo} - ${vpFrom})))`;
+
+export const maxWidth = '60rem';

@@ -1,10 +1,10 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 
-import { quote as quoteStyle, cite as citeStyle } from './style';
+import { container, quote as quoteStyle, cite as citeStyle } from './style';
 
 const HeroQuote = ({ quote, author, ...props }) => (
-  <blockquote {...props}>
+  <blockquote className={container} {...props}>
     <p className={quoteStyle}>&quot;{quote}&quot;</p>
 
     {author && <cite className={citeStyle}>{author}</cite>}

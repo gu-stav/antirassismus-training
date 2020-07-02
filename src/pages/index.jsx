@@ -1,12 +1,15 @@
 import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
 
+import Columnized from '../components/Columnized';
+import Heading from '../components/Heading';
 import HeroQuote from '../components/HeroQuote';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
 
 const HomePage = () => {
   const {
+    about: { aboutContent },
     heroQuote: { heroQuoteContent },
   } = useStaticQuery(graphql`
     query {
@@ -18,6 +21,16 @@ const HomePage = () => {
           ...HeroQuote
         }
       }
+
+      about: file(
+        name: { eq: "10-about" }
+        sourceInstanceName: { eq: "HomePage" }
+      ) {
+        aboutContent: childHomePageYaml {
+          title
+          description
+        }
+      }
     }
   `);
 
@@ -26,7 +39,17 @@ const HomePage = () => {
       <Section theme="primary">
         <HeroQuote {...heroQuoteContent} />
       </Section>
-      <Section theme="secondary">About</Section>
+      <Section theme="secondary">
+        <Heading level="2" theme="highlight">
+          {aboutContent.title}
+        </Heading>
+
+        <Columnized>
+          {aboutContent.description.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+        </Columnized>
+      </Section>
       <Section>Contact</Section>
     </Layout>
   );
