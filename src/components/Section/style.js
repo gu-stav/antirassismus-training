@@ -1,9 +1,9 @@
 import { css } from 'linaria';
 
-import { fluid } from '../../style-tokens';
+import { colors, fluid } from '../../style-tokens';
 
 export const section = css`
-  color: white;
+  color: ${colors.white};
   display: flex;
   justify-content: center;
   padding-bottom: ${fluid(1, 2)};

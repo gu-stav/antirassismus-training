@@ -8,8 +8,9 @@ export const fonts = {};
 
 export const colors = {
   primary: 'purple',
-  secondary: 'grey',
-  highlight: 'yellow',
+  secondary: '#2e2d2c',
+  highlight: '#fec62e',
+  white: '#f1eeef',
 };
 
 export const mq = MQ_BREAKPOINTS.reduce((acc, [name, size]) => {
