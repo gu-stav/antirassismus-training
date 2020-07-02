@@ -8,6 +8,7 @@ export const header = css`
   justify-content: space-between;
   padding: ${fluid(1, 1.5)};
   position: fixed;
+  width: 100%;
 `;
 
 export const logo = css`
@@ -16,4 +17,10 @@ export const logo = css`
   margin-bottom: 0;
   margin-top: 0;
   text-transform: uppercase;
+`;
+
+export const icon = css`
+  fill: ${colors.highlight};
+  height: ${fluid(2, 4)};
+  width: ${fluid(2, 4)};
 `;
