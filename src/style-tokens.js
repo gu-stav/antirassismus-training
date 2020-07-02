@@ -4,7 +4,17 @@ const MQ_BREAKPOINTS = [
   ['desktop', 1024],
 ];
 
-export const fonts = {};
+export const fonts = {
+  serif: {
+    narrow: {
+      family: 'PT Serif Pro Narrow',
+    },
+  },
+
+  sansSerif: {
+    family: 'Urbane Rounded',
+  },
+};
 
 export const colors = {
   primary: '#5759fb',
@@ -23,4 +33,4 @@ export const fluid = (from, to, vpFrom = 320, vpTo = 1280, baseSize = 16) =>
     from * baseSize
   }) * ((100vw - ${vpFrom}px) / (${vpTo} - ${vpFrom})))`;
 
-export const maxWidth = '60rem';
+export const maxWidth = '70rem';

@@ -5,7 +5,7 @@ import { container, quote as quoteStyle, cite as citeStyle } from './style';
 
 const HeroQuote = ({ quote, author, ...props }) => (
   <blockquote className={container} {...props}>
-    <p className={quoteStyle}>&quot;{quote}&quot;</p>
+    <p className={quoteStyle}>»{quote}«</p>
 
     {author && <cite className={citeStyle}>{author}</cite>}
   </blockquote>

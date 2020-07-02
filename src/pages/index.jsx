@@ -9,6 +9,8 @@ import Layout from '../components/Layout';
 import Paragraph from '../components/Paragraph';
 import Section from '../components/Section';
 
+import { fluid } from '../style-tokens';
+
 const HomePage = () => {
   const {
     about: { aboutContent },
@@ -53,7 +55,13 @@ const HomePage = () => {
         <HeroQuote {...heroQuoteContent} />
       </Section>
       <Section theme="secondary">
-        <Heading level="2" theme="highlight">
+        <Heading
+          level="2"
+          theme="highlight"
+          style={{
+            marginBottom: fluid(1, 2),
+          }}
+        >
           {aboutContent.title}
         </Heading>
 
@@ -65,7 +73,14 @@ const HomePage = () => {
       </Section>
 
       <Section theme="primary" padded={false}>
-        <Heading level="2" theme="highlight">
+        <Heading
+          level="2"
+          theme="highlight"
+          style={{
+            marginBottom: fluid(2, 3),
+            marginTop: fluid(2, 3),
+          }}
+        >
           {contactContent.title}
         </Heading>
 

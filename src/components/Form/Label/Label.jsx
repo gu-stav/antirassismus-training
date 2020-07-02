@@ -2,6 +2,12 @@
 
 import React from 'react';
 
-const Label = ({ children, ...props }) => <label {...props}>{children}</label>;
+import { label } from './style';
+
+const Label = ({ children, ...props }) => (
+  <label className={label} {...props}>
+    {children}
+  </label>
+);
 
 export default Label;

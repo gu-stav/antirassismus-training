@@ -4,6 +4,7 @@ import React from 'react';
 
 import Button from '../Form/Button';
 import Input from '../Form/Input';
+import FormRow from '../Form/FormRow';
 import Heading from '../Heading';
 import Paragraph from '../Paragraph';
 import Textarea from '../Form/Textarea';
@@ -24,23 +25,23 @@ const Contact = ({ receiverTitle, receiverDescription, ...props }) => (
       </div>
 
       <form className={cx(form, sectionChildren)}>
-        <div>
+        <FormRow>
           <Input type="text" label="Name" name="name" required />
           <Input type="text" label="Wohnort" name="place_of_living" required />
-        </div>
-        <div>
+        </FormRow>
+        <FormRow>
           <Input type="email" label="Email" name="email" required />
           <Input type="text" label="Telefon (optional)" name="telephone" />
-        </div>
-        <div>
+        </FormRow>
+        <FormRow>
           <Textarea
             label="Kurzinfo zu deiner Arbeit (optional)"
             name="message"
           />
-        </div>
-        <div>
+        </FormRow>
+        <FormRow>
           <Button type="submit">Absenden</Button>
-        </div>
+        </FormRow>
       </form>
     </div>
   </div>

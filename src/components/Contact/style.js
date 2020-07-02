@@ -21,5 +21,5 @@ export const children = css`
 `;
 
 export const form = css`
-  background-color: ${colors.lightGrey};
+  background-color: ${colors.white};
 `;
