@@ -30,7 +30,12 @@ const Contact = ({ receiverTitle, receiverDescription, ...props }) => (
         ))}
       </div>
 
-      <form className={cx(form, sectionChildren)}>
+      <form
+        className={cx(form, sectionChildren)}
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        name="contact-v1"
+      >
         <FormRow>
           <Input type="text" label="Name" name="name" required />
           <Input type="text" label="Wohnort" name="place_of_living" required />
@@ -47,6 +52,11 @@ const Contact = ({ receiverTitle, receiverDescription, ...props }) => (
           />
         </FormRow>
         <FormRow>
+          {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+          <label style={{ display: 'none' }}>
+            Don’t fill this out if you&apos;re human: <input name="bot-field" />
+          </label>
+
           <Button
             type="submit"
             style={{

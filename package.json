@@ -33,6 +33,7 @@
     "gatsby-plugin-preact": "^4.0.7",
     "gatsby-source-filesystem": "^2.3.16",
     "gatsby-transformer-json": "^2.4.9",
+    "gatsby-transformer-remark": "^2.8.23",
     "gatsby-transformer-yaml": "^2.4.8",
     "hooked-head": "^0.4.1",
     "husky": "^4.2.5",

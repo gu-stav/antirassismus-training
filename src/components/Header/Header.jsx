@@ -1,13 +1,16 @@
+import Link from 'gatsby-link';
 import React from 'react';
 
-import { header, logo, icon } from './style';
+import { header, logo, logoLink, icon } from './style';
 
 const Header = (props) => (
   <header className={header} {...props}>
     <h1 className={logo}>
-      antirassismus-
-      <br />
-      training.jetzt
+      <Link to="/" className={logoLink}>
+        antirassismus-
+        <br />
+        training.jetzt
+      </Link>
     </h1>
 
     <svg

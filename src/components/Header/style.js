@@ -12,6 +12,15 @@ export const header = css`
   width: 100%;
 `;
 
+export const logoLink = css`
+  text-decoration: none;
+
+  :hover,
+  :focus {
+    color: ${colors.highlight};
+  }
+`;
+
 export const logo = css`
   font-family: ${fonts.sansSerif.family};
   font-size: ${fluid(1, 1.25)};
