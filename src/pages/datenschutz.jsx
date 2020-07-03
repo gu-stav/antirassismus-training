@@ -1,4 +1,5 @@
 import { useStaticQuery, graphql } from 'gatsby';
+import { useTitle } from 'hooked-head';
 import React from 'react';
 
 import Layout from '../components/Layout';
@@ -23,7 +24,7 @@ const PrivacyPage = () => {
     }
   `);
 
-  console.log(html);
+  useTitle('Datenschutz');
 
   return (
     <Layout>

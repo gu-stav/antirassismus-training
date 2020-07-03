@@ -1,4 +1,5 @@
 import { useStaticQuery, graphql } from 'gatsby';
+import { useTitle } from 'hooked-head';
 import React from 'react';
 
 import Columnized from '../components/Columnized';
@@ -49,8 +50,10 @@ const HomePage = () => {
     }
   `);
 
+  useTitle('Antirassismus Training');
+
   return (
-    <Layout>
+    <Layout titleTemplate={false}>
       <Section theme="primary">
         <HeroQuote {...heroQuoteContent} />
       </Section>

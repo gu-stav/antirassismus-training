@@ -1,4 +1,5 @@
 import { useStaticQuery, graphql } from 'gatsby';
+import { useTitle } from 'hooked-head';
 import React from 'react';
 
 import Layout from '../components/Layout';
@@ -22,6 +23,8 @@ const ImprintPage = () => {
       }
     }
   `);
+
+  useTitle('Impressum');
 
   return (
     <Layout>
