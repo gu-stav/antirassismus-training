@@ -1,6 +1,6 @@
 import { css } from 'linaria';
 
-import { colors, fluid, maxWidth } from '../../style-tokens';
+import { colors, fluid, maxWidth, mq } from '../../style-tokens';
 
 export const contact = css`
   background-color: white;
@@ -23,7 +23,15 @@ export const children = css`
 `;
 
 export const receiverContainer = css`
-  grid-column: 1 / 5;
+  grid-column: 1 / -1;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+
+  @media ${mq.tablet} {
+    grid-column: 1 / 5;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
 
   > * {
     margin-bottom: 0;
@@ -32,5 +40,9 @@ export const receiverContainer = css`
 
 export const form = css`
   background-color: ${colors.white};
-  grid-column: 5 / -1;
+  grid-column: 1 / -1;
+
+  @media ${mq.tablet} {
+    grid-column: 5 / -1;
+  }
 `;

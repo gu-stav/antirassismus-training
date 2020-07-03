@@ -80,8 +80,7 @@ const HomePage = () => {
           level="2"
           theme="highlight"
           style={{
-            marginBottom: fluid(2, 3),
-            marginTop: fluid(2, 3),
+            margin: fluid(1, 4),
           }}
         >
           {contactContent.title}

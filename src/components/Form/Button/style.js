@@ -9,10 +9,10 @@ export const button = css`
   color: ${colors.white};
   cursor: pointer;
   font-family: ${fonts.sansSerif.family};
-  font-size: ${fluid(1, 1.15)};
+  font-size: 1.15rem;
   line-height: 1.3;
   outline: none;
-  padding: ${fluid(0.35, 0.5)} ${fluid(1, 3.5)};
+  padding: 0.5rem ${fluid(1, 3.5)};
 
   :hover,
   :focus {

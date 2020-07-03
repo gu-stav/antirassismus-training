@@ -9,7 +9,8 @@ const Container = styled.section`
   color: ${(props) =>
     ['secondary'].includes(props.theme) ? colors.white : colors.secondary};
   background-color: ${(props) => colors[props.theme]};
-  padding: ${(props) => (props.padded === false ? null : fluid(1, 4))};
+  padding: ${(props) =>
+    props.padded === false ? null : `${fluid(3, 4)} ${fluid(1, 4)}`};
 `;
 
 const Section = ({ children, ...props }) => (

@@ -6,7 +6,7 @@ import { fluid, maxWidth } from '../../style-tokens';
 const StyledColumnized = styled.div`
   display: grid;
   grid-column-gap: ${fluid(2, 3)};
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   max-width: ${maxWidth};
   width: 100%;
 `;
