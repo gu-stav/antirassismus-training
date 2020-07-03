@@ -29,8 +29,6 @@ export const receiverContainer = css`
 
   @media ${mq.tablet} {
     grid-column: 1 / 5;
-    padding-bottom: 0;
-    padding-top: 0;
   }
 
   > * {
