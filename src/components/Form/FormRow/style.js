@@ -15,6 +15,7 @@ export const row = css`
 
     @media ${mq.tablet} {
       margin-left: ${fluid(0.5, 1.5)};
+      margin-top: 0;
     }
   }
 `;
