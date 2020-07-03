@@ -1,10 +1,10 @@
 import { css } from 'linaria';
 
-import urbaneRoundedHeavyWoff from '../../fonts/Urbane Rounded/Urbane Rounded Heavy.woff';
-import urbaneRoundedHeavyWoff2 from '../../fonts/Urbane Rounded/Urbane Rounded Heavy.woff2';
+import urbaneRoundedHeavyWoff from '../../fonts/Urbane Rounded/Urbane Rounded Heavy-subset.woff';
+import urbaneRoundedHeavyWoff2 from '../../fonts/Urbane Rounded/Urbane Rounded Heavy-subset.woff2';
 
-import ptSerifProNarrowBlackItalicWoff from '../../fonts/PT Serif Pro/PT Serif Pro Narrow Black Italic.woff';
-import ptSerifProNarrowBlackItalicWoff2 from '../../fonts/PT Serif Pro/PT Serif Pro Narrow Black Italic.woff2';
+import ptSerifProNarrowBlackItalicWoff from '../../fonts/PT Serif Pro/PT Serif Pro Narrow Black Italic-subset.woff';
+import ptSerifProNarrowBlackItalicWoff2 from '../../fonts/PT Serif Pro/PT Serif Pro Narrow Black Italic-subset.woff2';
 
 export const global = css`
   :global() {
