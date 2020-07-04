@@ -6,6 +6,8 @@ const MQ_BREAKPOINTS = [
 
 export const fonts = {
   serif: {
+    family: 'PT Serif Pro',
+
     narrow: {
       family: 'PT Serif Pro Narrow',
     },
