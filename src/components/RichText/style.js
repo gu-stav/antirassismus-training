@@ -4,7 +4,7 @@ import { fonts, fluid, colors, maxWidth } from '../../style-tokens';
 
 export const richtext = css`
   color: ${colors.white};
-  font-family: ${fonts.serif.narrow.family};
+  font-family: ${fonts.serif.family};
   font-size: ${fluid(1, 1.05)};
   line-height: 1.45;
   max-width: ${maxWidth};
