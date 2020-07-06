@@ -52,7 +52,7 @@ const Contact = ({ receiverTitle, receiverDescription, ...props }) => {
 
     fetch('/', {
       body: encode({
-        'form-name': target.name,
+        'form-name': target.attributes.name.value,
         ...data,
       }),
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -68,6 +68,7 @@ const Contact = ({ receiverTitle, receiverDescription, ...props }) => {
       .catch(() =>
         setState((prevState) => ({
           ...prevState,
+          success: false,
           progress: false,
           error: true,
         }))
