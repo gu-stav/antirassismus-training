@@ -31,6 +31,26 @@ module.exports = {
       },
     },
 
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Antirassismus-Training.jetzt`,
+        short_name: `Antirassismus-Training`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#5759fb`,
+        display: `standalone`,
+        icon: `static/favicons/favicon-512-512.png`,
+        icons: [
+          {
+            src: `static/favicons/favicon.svg`,
+            sizes: `192x192`,
+            type: `image/svg+xml`,
+          },
+        ],
+      },
+    },
+
     'gatsby-plugin-preact',
     'gatsby-plugin-linaria',
     'gatsby-plugin-netlify',
