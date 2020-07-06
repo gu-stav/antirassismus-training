@@ -23,6 +23,7 @@ export const colors = {
   secondary: '#2e2d2c',
   highlight: '#fec62e',
   white: '#f1eeef',
+  errorDark: '#cce7cc',
 };
 
 export const mq = MQ_BREAKPOINTS.reduce((acc, [name, size]) => {

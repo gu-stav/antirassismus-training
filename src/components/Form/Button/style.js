@@ -19,4 +19,9 @@ export const button = css`
     background: ${colors.highlight};
     color: ${colors.secondary};
   }
+
+  :disabled {
+    background-color: cce7cc;
+    color: #bfbfbf;
+  }
 `;
