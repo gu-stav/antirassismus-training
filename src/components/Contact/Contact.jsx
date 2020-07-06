@@ -83,7 +83,7 @@ const Contact = ({ receiverTitle, receiverDescription, ...props }) => {
           </Heading>
 
           {receiverDescription.map((paragraph) => (
-            <Paragraph>{paragraph}</Paragraph>
+            <Paragraph html={paragraph} />
           ))}
         </div>
 
