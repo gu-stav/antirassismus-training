@@ -70,7 +70,7 @@ const HomePage = () => {
 
         <Columnized>
           {aboutContent.description.map((paragraph) => (
-            <Paragraph>{paragraph}</Paragraph>
+            <Paragraph html={paragraph} />
           ))}
         </Columnized>
       </Section>
