@@ -6,4 +6,4 @@ Utrechter Str. 48<br/>
 13347 Berlin
 
 Telefon: 0049 30 52666130<br/>
-E-Mail: <a href="hallo@antirassismus-training.jetzt">hallo@antirassismus-training.jetzt</a>
+E-Mail: <a href="mailto:hallo@antirassismus-training.jetzt">hallo@antirassismus-training.jetzt</a>
