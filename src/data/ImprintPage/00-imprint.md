@@ -5,4 +5,4 @@ Utrechter Str. 48<br/>
 13347 Berlin
 
 Telefon: 0049 30 52666130<br/>
-E-Mail: hallo@menschmenschmensch.de
+E-Mail: <a href="hallo@antirassismus-training.jetzt">hallo@antirassismus-training.jetzt</a>
