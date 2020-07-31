@@ -14,15 +14,16 @@ export const item = css`
   font-family: ${fonts.sansSerif.family};
   font-size: ${fluid(1, 1.2)};
   margin-bottom: 0.75rem;
+  padding-left: ${fluid(1.25, 1.75)};
   position: relative;
 `;
 
 export const itemIcon = css`
   color: ${colors.highlight};
   height: ${fluid(1, 1.3)};
+  left: 0;
   position: absolute;
   top: ${fluid(0.1, 0.25)};
-  transform: translateX(${fluid(-1.25, -1.75)});
   width: ${fluid(1, 1.3)};
 `;
 
