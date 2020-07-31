@@ -86,11 +86,11 @@ const HomePage = () => {
         </Columnized>
       </Section>
 
-      <Section theme="secondary">
+      <Section theme="primary">
         <Trust {...trustContent} />
       </Section>
 
-      <Section theme="primary" padded={false}>
+      <Section theme="secondary" padded={false}>
         <Heading
           level="2"
           theme="highlight"
