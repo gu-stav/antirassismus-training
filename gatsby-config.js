@@ -2,6 +2,9 @@ const fsDataSources = ['HomePage', 'ImprintPage', 'PrivacyPage'];
 
 module.exports = {
   siteMetadata: {
+    description:
+      'Die Plattform, um Antirassismus-Trainings in deiner Nähe zu finden. Antirassismus-Trainings helfen dabei, rassistische Strukturen zu erkennen und abzubauen.',
+
     socialMedia: [
       ['twitter', 'https://twitter.com/zsmmnlbnwllkmmn'],
       ['facebook', 'https://www.facebook.com/zusammenlebenwillkommen/'],

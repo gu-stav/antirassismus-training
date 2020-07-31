@@ -1,6 +1,6 @@
 import { cx } from 'linaria';
 import { graphql, useStaticQuery } from 'gatsby';
-import { useLang, useTitleTemplate } from 'hooked-head';
+import { useLang, useMeta, useTitleTemplate } from 'hooked-head';
 import React from 'react';
 
 import Footer from '../Footer';
@@ -11,12 +11,13 @@ import { global as globalCSS, fonts as fontsCSS } from './style';
 const Layout = ({ children, titleTemplate = true }) => {
   const {
     site: {
-      siteMetadata: { socialMedia },
+      siteMetadata: { description, socialMedia },
     },
   } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
+          description
           socialMedia
         }
       }
@@ -24,6 +25,7 @@ const Layout = ({ children, titleTemplate = true }) => {
   `);
 
   useLang('de');
+  useMeta({ name: 'description', content: description });
   useTitleTemplate(titleTemplate ? '%s | Antirassismus-Training' : '');
 
   return (
