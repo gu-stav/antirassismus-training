@@ -9,6 +9,7 @@ import HeroQuote from '../components/HeroQuote';
 import Layout from '../components/Layout';
 import Paragraph from '../components/Paragraph';
 import Section from '../components/Section';
+import Trust from '../components/Trust';
 
 import { fluid } from '../style-tokens';
 
@@ -16,6 +17,7 @@ const HomePage = () => {
   const {
     about: { aboutContent },
     heroQuote: { heroQuoteContent },
+    trust: { trustContent },
     contact: { contactContent },
   } = useStaticQuery(graphql`
     query {
@@ -35,6 +37,15 @@ const HomePage = () => {
         aboutContent: childHomePageYaml {
           title
           description
+        }
+      }
+
+      trust: file(
+        name: { eq: "15-trust" }
+        sourceInstanceName: { eq: "HomePage" }
+      ) {
+        trustContent: childHomePageYaml {
+          ...Trust
         }
       }
 
@@ -75,7 +86,11 @@ const HomePage = () => {
         </Columnized>
       </Section>
 
-      <Section theme="primary" padded={false}>
+      <Section theme="primary">
+        <Trust {...trustContent} />
+      </Section>
+
+      <Section theme="secondary" padded={false}>
         <Heading
           level="2"
           theme="highlight"
