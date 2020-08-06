@@ -33,7 +33,7 @@
     "gatsby-plugin-manifest": "^2.4.17",
     "gatsby-plugin-netlify": "^2.3.9",
     "gatsby-plugin-preact": "^4.0.7",
-    "gatsby-plugin-preload-fonts": "^1.2.16",
+    "gatsby-plugin-preload-fonts": "^1.2.20",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-source-filesystem": "^2.3.16",
     "gatsby-transformer-json": "^2.4.9",
