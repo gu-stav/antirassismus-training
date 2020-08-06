@@ -43,7 +43,7 @@
     "husky": "^4.2.5",
     "linaria": "^2.0.0-alpha.5",
     "lint-staged": "^10.2.11",
-    "preact": "^10.4.5",
+    "preact": "^10.4.7",
     "preact-render-to-string": "^5.1.9",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
