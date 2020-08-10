@@ -4,6 +4,7 @@ import { colors, fluid, fonts, maxWidth, mq } from '../../style-tokens';
 
 export const contact = css`
   background-color: white;
+  color: ${colors.secondary};
   display: flex;
   justify-content: center;
   width: 100%;
