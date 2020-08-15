@@ -4,6 +4,7 @@ import React from 'react';
 
 import Columnized from '../components/Columnized';
 import Contact from '../components/Contact';
+import FAQ from '../components/FAQ';
 import Heading from '../components/Heading';
 import HeroQuote from '../components/HeroQuote';
 import Layout from '../components/Layout';
@@ -18,11 +19,12 @@ const HomePage = () => {
     about: { aboutContent },
     heroQuote: { heroQuoteContent },
     trust: { trustContent },
+    faq: { faqContent },
     contact: { contactContent },
   } = useStaticQuery(graphql`
     query {
       heroQuote: file(
-        name: { eq: "00-hero-quote" }
+        name: { eq: "hero-quote" }
         sourceInstanceName: { eq: "HomePage" }
       ) {
         heroQuoteContent: childHomePageYaml {
@@ -31,7 +33,7 @@ const HomePage = () => {
       }
 
       about: file(
-        name: { eq: "10-about" }
+        name: { eq: "about" }
         sourceInstanceName: { eq: "HomePage" }
       ) {
         aboutContent: childHomePageYaml {
@@ -41,7 +43,7 @@ const HomePage = () => {
       }
 
       trust: file(
-        name: { eq: "15-trust" }
+        name: { eq: "trust" }
         sourceInstanceName: { eq: "HomePage" }
       ) {
         trustContent: childHomePageYaml {
@@ -49,8 +51,14 @@ const HomePage = () => {
         }
       }
 
+      faq: file(name: { eq: "faq" }, sourceInstanceName: { eq: "HomePage" }) {
+        faqContent: childHomePageYaml {
+          ...FAQ
+        }
+      }
+
       contact: file(
-        name: { eq: "20-contact" }
+        name: { eq: "contact" }
         sourceInstanceName: { eq: "HomePage" }
       ) {
         contactContent: childHomePageYaml {
@@ -90,7 +98,11 @@ const HomePage = () => {
         <Trust {...trustContent} />
       </Section>
 
-      <Section theme="secondary" padded={false}>
+      <Section theme="secondary">
+        <FAQ {...faqContent} />
+      </Section>
+
+      <Section theme="primary" padded={false}>
         <Heading
           level="2"
           theme="highlight"
