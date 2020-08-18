@@ -8,9 +8,12 @@ import { heading } from './style';
 const StyledHeading = styled.div`
   color: ${(props) => colors[props.theme]};
   font-size: ${(props) => {
-    switch (props.level) {
+    switch (parseInt(props.level, 10)) {
       case 3:
         return fluid(1.15, 1.35);
+
+      case 4:
+        return fluid(1, 1.15);
 
       default:
         return fluid(1.5, 2.25);
@@ -21,7 +24,7 @@ const StyledHeading = styled.div`
 
 const Heading = ({ level = 1, as, children, ...props }) => (
   <StyledHeading
-    as={`h${as || level}`}
+    as={`h${level}`}
     level={as || level}
     className={heading}
     {...props}
