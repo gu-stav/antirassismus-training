@@ -45,7 +45,7 @@
     "lint-staged": "^10.2.13",
     "preact": "^10.4.8",
     "preact-render-to-string": "^5.1.10",
-    "prettier": "^2.0.5",
+    "prettier": "^2.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
