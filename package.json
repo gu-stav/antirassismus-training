@@ -30,7 +30,7 @@
     "gatsby-link": "^2.4.13",
     "gatsby-plugin-hooked-head": "^0.1.1",
     "gatsby-plugin-linaria": "^2.1.0",
-    "gatsby-plugin-manifest": "^2.4.25",
+    "gatsby-plugin-manifest": "^2.4.26",
     "gatsby-plugin-netlify": "^2.3.13",
     "gatsby-plugin-preact": "^4.0.9",
     "gatsby-plugin-preload-fonts": "^1.2.22",
