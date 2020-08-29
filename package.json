@@ -35,7 +35,7 @@
     "gatsby-plugin-preact": "^4.0.9",
     "gatsby-plugin-preload-fonts": "^1.2.22",
     "gatsby-plugin-react-svg": "^3.0.0",
-    "gatsby-source-filesystem": "^2.3.26",
+    "gatsby-source-filesystem": "^2.3.27",
     "gatsby-transformer-json": "^2.4.11",
     "gatsby-transformer-remark": "^2.8.30",
     "gatsby-transformer-yaml": "^2.4.10",
