@@ -32,7 +32,7 @@
     "gatsby-plugin-linaria": "^2.1.0",
     "gatsby-plugin-manifest": "^2.4.27",
     "gatsby-plugin-netlify": "^2.3.13",
-    "gatsby-plugin-preact": "^4.0.9",
+    "gatsby-plugin-preact": "^4.0.10",
     "gatsby-plugin-preload-fonts": "^1.2.22",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-source-filesystem": "^2.3.26",
