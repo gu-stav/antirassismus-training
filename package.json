@@ -41,7 +41,7 @@
     "gatsby-transformer-yaml": "^2.4.11",
     "hooked-head": "^0.4.1",
     "husky": "^4.3.0",
-    "linaria": "^2.0.0-rc.3",
+    "linaria": "^2.0.2",
     "lint-staged": "^10.4.0",
     "preact": "^10.5.2",
     "preact-render-to-string": "^5.1.10",
