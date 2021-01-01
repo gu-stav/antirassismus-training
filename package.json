@@ -18,7 +18,7 @@
   "author": "Gustav Pursche <pursche@posteo.de>",
   "dependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.9.0",
+    "eslint": "^7.16.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.21.2",
