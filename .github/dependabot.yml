@@ -1,0 +1,70 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "04:00"
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: gatsby-plugin-preact
+    versions:
+    - 4.4.0
+    - 4.6.0
+  - dependency-name: gatsby-source-filesystem
+    versions:
+    - 2.10.0
+    - 2.8.1
+  - dependency-name: gatsby-plugin-netlify
+    versions:
+    - 2.10.0
+    - 2.8.0
+  - dependency-name: gatsby-link
+    versions:
+    - 2.10.0
+    - 2.8.0
+  - dependency-name: gatsby-transformer-json
+    versions:
+    - 2.10.0
+    - 2.8.0
+  - dependency-name: gatsby-plugin-preload-fonts
+    versions:
+    - 1.6.1
+    - 1.8.0
+  - dependency-name: eslint-config-prettier
+    versions:
+    - 7.1.0
+    - 7.2.0
+  - dependency-name: husky
+    versions:
+    - 4.3.6
+    - 4.3.8
+  - dependency-name: gatsby-transformer-remark
+    versions:
+    - 2.13.1
+    - 2.15.0
+  - dependency-name: eslint
+    versions:
+    - 7.16.0
+    - 7.19.0
+  - dependency-name: gatsby
+    versions:
+    - 2.29.3
+    - 2.31.1
+  - dependency-name: gatsby-transformer-yaml
+    versions:
+    - 2.10.0
+    - 2.8.0
+  - dependency-name: gatsby-image
+    versions:
+    - 2.10.0
+    - 2.8.0
+  - dependency-name: preact
+    versions:
+    - 10.5.8
+  - dependency-name: eslint-plugin-prettier
+    versions:
+    - 3.3.0
+  - dependency-name: lint-staged
+    versions:
+    - 10.5.3
